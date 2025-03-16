@@ -1,0 +1,74 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1739377345469-ab71af28bdfb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZWxkZXIlMjBwZW9wbGUlMjBjYXJlJTIwbGlnaHQlMjBiYWNrZ29ydW5kfGVufDB8fDB8fHww') no-repeat center center/cover;
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    width: 350px;
+    padding: 30px;
+    background: rgba(15, 76, 230, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(5, 17, 76, 0.832);
+    backdrop-filter: blur(15px);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.inputBox input,
+.password input,
+.confirmpassword input {
+    width: 90%;
+    padding: 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(10, 42, 172, 0.2);
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.button button {
+    width: 30%;
+    padding: 12px;
+    background: linear-gradient(45deg, #007BFF, #08396e);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button button:hover {
+    background: linear-gradient(45deg, #0056b3, #003f7f);
+    transform: scale(1.05);
+}
+input::placeholder{
+    font-size:0.9rem ;
+    color: black;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
